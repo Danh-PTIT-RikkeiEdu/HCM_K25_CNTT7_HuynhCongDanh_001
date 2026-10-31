@@ -19,7 +19,7 @@ let books = [
 
 
 let choice = ""
-const line = "=".repeat(60);
+const line = "=".repeat(50);
 
 
 function validateBookCode(code) {
@@ -218,6 +218,25 @@ function searchBookByAuthor() {
     }
 }
 
+// case 0
+function Report() {
+    console.log("Hẹn gặp lại bạn vào lần sau.");
+    let i = 0;
+    for (let i = 0; i < books.length; i++) {
+        
+        
+    }
+    console.log(`${line}
+BÁO CÁO TỔNG KẾT ĐẦU SÁCH
+${line}
+Tổng số đầu sách: ${i+1}
+Số lượng trung bình: 
+Đầu sách nhiều nhất:
+${line}
+`);
+    
+}
+
 
 do {
     choice = prompt(`${line}
@@ -264,7 +283,7 @@ Vui lòng nhập lựa chọn của bạn (0 - 5):`);
 
 
         case "0":
-            console.log("Hẹn gặp lại bạn vào lần sau.");
+            Report();
 
             break;
 
