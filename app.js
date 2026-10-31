@@ -51,7 +51,7 @@ function inputIntegerInRange(message, min, max) {
         let data = prompt(message);
         if (data === null) {
             console.log("Hủy thao tác");
-            continue;
+            break;
         }
 
         if (data.trim() === "") {
